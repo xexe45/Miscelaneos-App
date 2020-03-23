@@ -1,0 +1,16 @@
+<mat-card class="example-card">
+  <mat-card-header>
+
+    <mat-card-title class="title">{{  title  }}</mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content>
+    <hr>
+    <div class="p-2">
+      <button [disabled]="loading" (click)="guardar()" class="btn btn-dark btn-block">
+        <i [ngClass]="{'fa-save': !loading, 'fa-refresh fa-spin': loading}" class="fa"></i> {{ text }}</button>
+    </div>
+  </mat-card-content>
+
+</mat-card>

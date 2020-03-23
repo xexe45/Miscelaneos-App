@@ -1,0 +1,25 @@
+<mat-card class="example-card">
+  <mat-card-header>
+
+    <mat-card-title class="title">{{  title  }}</mat-card-title>
+
+  </mat-card-header>
+
+  <mat-card-content>
+    <hr>
+    <div class="p-2">
+      <div class="alert" [ngClass]="alerta" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <button (click)="alerta = 'alert-primary'" type="button" class="btn btn-primary mt-2 mr-2">Primary</button>
+      <button (click)="alerta = 'alert-secondary'" type="button" class="btn btn-secondary mt-2 mr-2">Secondary</button>
+      <button (click)="alerta = 'alert-success'" type="button" class="btn btn-success mt-2 mr-2">Success</button>
+      <button (click)="alerta = 'alert-danger'" type="button" class="btn btn-danger mt-2 mr-2">Danger</button>
+      <button (click)="alerta = 'alert-warning'" type="button" class="btn btn-warning mt-2 mr-2">Warning</button>
+      <button (click)="alerta = 'alert-info'" type="button" class="btn btn-info mt-2 mr-2">Info</button>
+      <button (click)="alerta = 'alert-light'" type="button" class="btn btn-light mt-2 mr-2">Light</button>
+      <button (click)="alerta = 'alert-dark'" type="button" class="btn btn-dark mt-2 mr-2">Dark</button>
+    </div>
+  </mat-card-content>
+
+</mat-card>
