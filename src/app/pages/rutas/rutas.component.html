@@ -1,1 +1,14 @@
-<p>rutas works!</p>
+<div class="row p-4">
+  <div class="col-md-12 text-center">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <a [routerLink]="['inicio']" routerLinkActive="active" type="button" class="btn btn-secondary">Inicio</a>
+      <a [routerLink]="['nuevo']" routerLinkActive="active" type="button" class="btn btn-secondary">Nuevo</a>
+      <a [routerLink]="['editar']" routerLinkActive="active" type="button" class="btn btn-secondary">Editar</a>
+    </div>
+  </div>
+</div>
+<div class="row p-4">
+  <div class="col-md-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -7,6 +7,6 @@
     <a routerLink="/home" routerLinkActive="activo" href="#">Inicio</a>
   </span>
   <span class="link">
-    <a routerLink="/rutas" routerLinkActive="activo" href="#">Usuarios</a>
+    <a [routerLink]="['/rutas', 10]" routerLinkActive="activo" href="#">Rutas Hijas</a>
   </span>
 </mat-toolbar>

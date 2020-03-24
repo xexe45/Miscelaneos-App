@@ -10,8 +10,15 @@ import { InicioComponent } from "./pages/inicio/inicio.component";
 import { RutasComponent } from "./pages/rutas/rutas.component";
 import { NgStylecComponent } from "./components/ng-stylec/ng-stylec.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { ClasesComponent } from './components/clases/clases.component';
-import { AsincronoComponent } from './components/asincrono/asincrono.component';
+import { ClasesComponent } from "./components/clases/clases.component";
+import { AsincronoComponent } from "./components/asincrono/asincrono.component";
+import { DirectivasComponent } from "./components/directivas/directivas.component";
+import { ResaltadoDirective } from "./directives/resaltado.directive";
+import { NgSwitchComponent } from "./components/ng-switch/ng-switch.component";
+import { RutaHomeComponent } from "./components/rutas/ruta-home/ruta-home.component";
+import { RutaNuevoComponent } from "./components/rutas/ruta-nuevo/ruta-nuevo.component";
+import { RutaEditarComponent } from "./components/rutas/ruta-editar/ruta-editar.component";
+import { AppRoutingRutasModule } from "./pages/rutas/app-routing-rutas.module";
 
 @NgModule({
   declarations: [
@@ -21,15 +28,22 @@ import { AsincronoComponent } from './components/asincrono/asincrono.component';
     RutasComponent,
     NgStylecComponent,
     ClasesComponent,
-    AsincronoComponent
+    AsincronoComponent,
+    DirectivasComponent,
+    ResaltadoDirective,
+    NgSwitchComponent,
+    RutaHomeComponent,
+    RutaNuevoComponent,
+    RutaEditarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     AppMaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingRutasModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
